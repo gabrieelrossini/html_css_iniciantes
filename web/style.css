@@ -1,4 +1,23 @@
-a {
-    color: black;
-    text-decoration: none;
+#introducao {
+    color: gold;
+}
+
+.codigo {
+    color: blue;
+}
+
+.design {
+    color: red;
+}
+
+.grande {
+    font-size: 32px;
+}
+
+.azul {
+    color: blue;
+}
+
+.underline {
+    text-decoration: underline;
 }
