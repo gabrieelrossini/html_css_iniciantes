@@ -1,23 +1,19 @@
-#introducao {
-    color: gold;
+div {
+    background: #aaaaaa;
+    width: 140px;
+    height: 80px;
+    padding: 30px;
+    border: 10px solid #111111;
+    margin: 30px;
 }
 
-.codigo {
-    color: blue;
+body {
+    margin: 0px;
 }
 
-.design {
-    color: red;
-}
-
-.grande {
-    font-size: 32px;
-}
-
-.azul {
-    color: blue;
-}
-
-.underline {
-    text-decoration: underline;
+h1 {
+    background: #8844ee;
+    padding: 20px;
+    border: 4px solid #111;
+    margin: 20px;
 }
