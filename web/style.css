@@ -1,14 +1,5 @@
-span, 
-a, 
-strong {
-    border: 1px solid rgba(0, 0, 0, 0.5);
-}
-
-a {
-    padding: 20px;
-    display: inline-block;
-}
-
-div, h1, p {
-    border: 1px solid rgba(255, 0, 0, 0.5);
+img {
+    max-width: 100%;
+    width:600px;
+    display: block;
 }
