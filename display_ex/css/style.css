@@ -1,0 +1,39 @@
+body {
+    font-family: Arial;
+}
+
+.title {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.text {
+    color: #b2b2b2;
+}
+
+.yellow {
+    color: #febe01;
+}
+
+.block_title {
+    color: #fff;
+}
+
+.block {
+    background: #111;
+    border-radius: 4px;
+    padding: 10px 30px;
+    margin: 20px 50px;
+}
+
+.button {
+    border-radius: 4px;
+    background: #febe01;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.button_text {
+    color: #332200;
+    
+}
