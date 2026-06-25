@@ -6,8 +6,8 @@ body {
     background: #f7f7f7;
     display: grid;
     justify-items: center;
-    margin-top: 60px;
-    gap: 60px;
+    margin-top: 4rem;
+    gap: 4rem;
 }
 
 img {
@@ -39,13 +39,16 @@ ul {
 .header {
     display: grid;
     justify-items: center;
-    gap: 60px;
+    gap: 4rem;
+    background-color: #f7f7f7;
+    object-fit: cover;
+    object-position: top center;
 }
 
 .header_nav {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 1rem;
     justify-content: center;
 }
 
@@ -111,6 +114,11 @@ ul {
     background: #900;
 }
 
+.article-features {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
 .article-features_title {
     font-size: 4rem;
     text-transform: uppercase;
@@ -119,12 +127,6 @@ ul {
     padding: 2.5rem;
     align-self: center;
     background-image: url("../img/onda.svg");
-}
-
-.article-features {
-    background: #fff;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
 }
 
 .article-features_list_item{
@@ -143,6 +145,10 @@ ul {
     background-color: #f7f7f7;
 }
 
+.article-features_list_item:nth-child(even) {
+    background-color: #fff;
+}
+
 .article-features_list_item_text {
     grid-column: 2;
 }
@@ -155,4 +161,81 @@ ul {
     text-align: center;
     padding: 2.5rem;
     box-sizing: border-box;
+    margin: 0;
+}
+
+@media (max-width: 920px) {
+    html {
+        font-size: 110%;
+    }
+    body {
+        margin-top: 3rem;
+        gap: 3rem;
+    }
+    .header {
+        gap: 3rem;
+    }
+    .main {
+        max-width: 760px;
+    }
+    .article {
+        grid-template-columns: 1fr;
+    }
+    .article_text {
+        text-align: center;
+    }
+     .article_text::after {
+        display: none;
+    }
+    .article_text_title {
+        justify-self: center;
+    }
+    .article_text_button {
+        justify-self: center;
+    }
+    .article-features {
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+    .article-features_title {
+        text-align: center;
+    }
+}
+
+@media (max-width: 760px) {
+    html {
+        font-size: 125%;
+    }
+    body {
+        margin-top: 2rem;
+        gap: 2rem;
+    }
+    .header {
+        gap: 2rem;
+    }
+    .main {
+        max-width: 640px;
+    }
+    .article-features {
+        max-width: 640px;
+    }
+}
+
+@media (max-width: 640px) {
+    html {
+        font-size: 150%
+    }
+    body {
+        margin-top: 1rem;
+        gap: 1rem;
+    }
+    .header {
+        gap: 1rem;
+    }
+    .main {
+        max-width: 560px;
+    }
+    .article-features {
+        max-width: 560px;
+    }
 }
