@@ -1,0 +1,68 @@
+img {
+    max-width: 100%;
+    display: block;
+}
+
+div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+h1 {
+    grid-column: 1 / -1;
+}
+
+/* Define a largura máxima onde o estilo é aplicado */
+
+@media (max-width: 600px) {
+    div {
+        grid-template-columns: 1fr;
+    }
+    h1 {
+        background: lightpink;
+    }
+}
+
+/* Retira a imagem da tela */
+
+@media (max-width: 400px) {
+    img {
+        display: none
+    }
+}
+
+/* Define a largura mínima onde o estilo é aplicado */
+
+
+@media (min-width: 1000px) {
+    html {
+        font-size: 150%;
+    }
+}
+
+/* Define a largura mínima E máxima onde o estilo é aplicado */
+
+
+@media (min-width: 700px) and (max-width: 900px) {
+    p {
+        background: lightblue;
+    }
+}
+
+/* Aplica apenas na tela */
+
+@media screen {
+    body {
+        background: pink;
+    }
+}
+
+/* Aplica apenas na impressão */
+
+
+@media print {
+    body {
+        background: #f7f7f7;
+    }
+}
