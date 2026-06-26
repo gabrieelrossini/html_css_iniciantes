@@ -102,6 +102,11 @@ ul {
     right: -30px;
 }
 
+.article_text_img {
+    object-fit: cover;
+    height: 100%
+}
+
 .article_text_button {
     background: #e21;
     color: #fff;
@@ -127,12 +132,13 @@ ul {
     padding: 2.5rem;
     align-self: center;
     background-image: url("../img/onda.svg");
+    /* word-break: break-all; */
 }
 
 .article-features_list_item{
     display: grid;
     grid-template-columns: auto 1fr;
-    gap: 10px 20px;
+    gap: 0.6rem 1.2rem;
     padding: 1.25rem;
     border-left: 4px solid transparent;
 }
@@ -164,78 +170,42 @@ ul {
     margin: 0;
 }
 
-@media (max-width: 920px) {
-    html {
-        font-size: 110%;
-    }
-    body {
-        margin-top: 3rem;
-        gap: 3rem;
-    }
-    .header {
-        gap: 3rem;
-    }
-    .main {
-        max-width: 760px;
-    }
-    .article {
-        grid-template-columns: 1fr;
-    }
-    .article_text {
-        text-align: center;
-    }
-     .article_text::after {
-        display: none;
-    }
-    .article_text_title {
-        justify-self: center;
-    }
-    .article_text_button {
-        justify-self: center;
-    }
+@media (max-width: 1000px) {
     .article-features {
         grid-template-columns: 1fr;
-        justify-items: center;
+        justify-items: center
     }
+
     .article-features_title {
         text-align: center;
     }
 }
 
-@media (max-width: 760px) {
-    html {
-        font-size: 125%;
-    }
+@media (max-width: 720px) {
     body {
-        margin-top: 2rem;
         gap: 2rem;
+        margin-top: 2rem;
     }
     .header {
         gap: 2rem;
     }
-    .main {
-        max-width: 640px;
+    .article {
+        grid-template-columns: 1fr;
     }
-    .article-features {
-        max-width: 640px;
+    .article_text::after {
+        display: none;
+    }
+    .article_text {
+        justify-items: start;
+        text-align: left;
+    }
+    .article-features_title {
+        font-size: 3rem;
     }
 }
 
-@media (max-width: 640px) {
-    html {
-        font-size: 150%
-    }
-    body {
-        margin-top: 1rem;
-        gap: 1rem;
-    }
-    .header {
-        gap: 1rem;
-    }
-    .main {
-        max-width: 560px;
-    }
-    .article-features {
-        max-width: 560px;
+@media (max-width: 400px) {
+    .article-features_title {
+        font-size: 2rem;
     }
 }
