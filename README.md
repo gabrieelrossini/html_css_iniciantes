@@ -11,7 +11,7 @@ Repositório com a resolução dos exercícios e do projeto final do curso **HTM
 
 ---
 
-## 📁 Estrutura do Projeto
+## Estrutura do Projeto
 
 | Pasta | Tópico | Principais Conceitos |
 |-------|--------|---------------------|
@@ -32,7 +32,7 @@ Repositório com a resolução dos exercícios e do projeto final do curso **HTM
 
 ---
 
-## 🚀 Como Visualizar os Exercícios
+## Como Visualizar os Exercícios
 
 **Opção 1: Abrir diretamente no navegador**
 - Clique duas vezes no arquivo `.html` desejado dentro de cada pasta
@@ -43,7 +43,7 @@ Repositório com a resolução dos exercícios e do projeto final do curso **HTM
 
 ---
 
-## 📚 Conceitos Abordados no Curso
+## Conceitos Abordados no Curso
 
 - HTML Semântico (`header`, `nav`, `main`, `article`, `section`, `footer`)
 - CSS Reset & Normalize
@@ -60,7 +60,7 @@ Repositório com a resolução dos exercícios e do projeto final do curso **HTM
 
 ---
 
-## 👨‍💻 Autor
+## Autor
 
 **Gabriel Rossini**
 
