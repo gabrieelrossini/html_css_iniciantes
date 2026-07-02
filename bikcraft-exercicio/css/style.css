@@ -1,9 +1,24 @@
+:root {
+    --color1: #f7f7f7;
+    --color2: #fff;
+    --color3: #141414;
+    --color4: #c6c6c6;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --color1:#141414;
+        --color2:#000;
+        --color3:#f7f7f7;
+
+    }
+}
 /* configuração gerais */
 
 body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0px;
-    background: #f7f7f7;
+    background: var(--color1);
     display: grid;
     justify-items: center;
     margin-top: 4rem;
@@ -40,9 +55,10 @@ ul {
     display: grid;
     justify-items: center;
     gap: 4rem;
-    background-color: #f7f7f7;
-    object-fit: cover;
-    object-position: top center;
+}
+
+.header_logo {
+    color:var(--color3);
 }
 
 .header_nav {
@@ -54,10 +70,10 @@ ul {
 
 .header_nav_link {
     display: block;
-    background: #fff;
+    background: var(--color2);
     padding: 1rem 2rem;
     border-radius: 4px;
-    color: #000;
+    color: var(--color3);
     text-transform: uppercase;
     border: solid 2px transparent;
 }
@@ -82,14 +98,19 @@ ul {
     gap: 20px;
     align-content: center;
     justify-items: end;
-    background: #fff;
+    background: var(--color2);
     padding: 2.5rem;
     text-align: right;
     position: relative;
 }
 
+.article_text p {
+    color: var(--color3);
+}
+
 .article_text_title {
     font-size: 2rem;
+    color: var(--color3);
 }
 
 .article_text::after {
@@ -122,12 +143,13 @@ ul {
 .article-features {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    background: var(--color3);
 }
 
 .article-features_title {
     font-size: 4rem;
     text-transform: uppercase;
-    color:#c6c6c6;
+    color: var(--color4);
     text-align: right;
     padding: 2.5rem;
     align-self: center;
@@ -148,11 +170,12 @@ ul {
 }
 
 .article-features_list_item:nth-child(odd) {
-    background-color: #f7f7f7;
+    background-color: var(--color2);
+    color:var(--color3);
 }
 
 .article-features_list_item:nth-child(even) {
-    background-color: #fff;
+    background-color: var(--color3);
 }
 
 .article-features_list_item_text {
@@ -162,12 +185,16 @@ ul {
 /* configurações do footer */
 
 .footer {
-    background: #fff;
+    background: var(--color2);
     width: 100%;
     text-align: center;
     padding: 2.5rem;
     box-sizing: border-box;
     margin: 0;
+}
+
+.footer p {
+    color: var(--color3);
 }
 
 @media (max-width: 1000px) {
