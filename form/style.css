@@ -58,4 +58,40 @@ button {
     color: #127;
     border-radius: 4px;
     cursor: pointer;
+    margin-bottom: 20px;
+}
+
+[required] {
+    border: 2px solid tomato;
+    border-radius: 4px;
+}
+
+a[href="#contato"] {
+    text-decoration: none;
+    padding: 5px 10px;
+    border: 2px solid black;
+    border-radius: 4px;
+    color:#127;
+}
+
+/* OU [href="#contato"] {
+        text-decoration: none;
+        padding: 5px 10px;
+        border: 2px solid lightsteelblue;
+        border-radius: 4px;
+        color:#127;
+} */
+
+/* selecionar o primeiro elemento */
+
+[href^="#"] {
+    background: #caf;
+}
+
+[href$="origamid"] {
+    text-decoration: none;
+    padding: 5px 10px;
+    border: 2px solid black;
+    border-radius: 4px;
+    background: lightsteelblue;
 }

@@ -1,0 +1,84 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+
+}
+
+p {
+    margin: 0px;
+}
+
+div {
+    margin: 10px auto;
+}
+
+[required] {
+    border: 2px solid tomato;
+    border-radius: 4px;
+    margin: 10px auto;
+}
+
+[name="email"] {
+    border-radius: 4px;
+    border: 2px solid blue;
+}
+
+p[required] {
+    padding: 5px 10px;
+}
+
+[href="#contato"] {
+    text-decoration: none;
+    padding: 5px 10px;
+    border: 2px solid lightsteelblue;
+    border-radius: 4px;
+    color:#127;
+}
+
+/* todos os "a" com a tag */
+a[href="#contato"] {
+    text-decoration: none;
+    padding: 5px 10px;
+    border: 2px solid black;
+    border-radius: 4px;
+    color:#127;
+}
+
+/* selecionar o primeiro elemento */
+
+[href^="#"] {
+    background: #caf;
+}
+
+/* selecionar o ultimo elemento */
+
+[href$="origamid"] {
+    text-decoration: none;
+    padding: 5px 10px;
+    border: 2px solid black;
+    border-radius: 4px;
+    background: lightsteelblue;
+}
+
+/* selecionar o filho direto */
+
+section > h2 {
+    color: tomato;
+}
+
+article {
+    background: lightgreen;
+    padding: 10px;
+}
+
+/* "todos os 'p' que vierem depois de um 'p' */
+
+article p + p {
+    margin-top: 20px;
+}
+
+/* seleciona todos os elementos da tela */
+
+/* * {
+    border: 1px solid lightcoral;
+} */
