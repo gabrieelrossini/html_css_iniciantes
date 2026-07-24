@@ -1,8 +1,15 @@
-const botao = document.querySelector(".botao");
-
-function mostrar() {
-  const texto = document.querySelector(".texto");
-  texto.classList.toggle("ativar");
+function coordenadaMouse(event) {
+  const coordenadas = {
+    x: event.x,
+    y: event.y
+  }
+  console.log(coordenadas);
 }
 
-botao.addEventListener("click", mostrar);
+// window.addEventListener("mousemove", coordenadaMouse);
+
+function scroll() {
+  console.log(window.scrollY);
+}
+
+window.addEventListener("scroll", scroll)
