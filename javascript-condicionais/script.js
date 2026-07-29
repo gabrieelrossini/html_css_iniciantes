@@ -1,8 +1,16 @@
-const condicao = Boolean(true);
-console.log(condicao);
+const elemento = document.querySelector("p");
+const texto = elemento.innerText;
 
-const stringPura = Boolean("");
-console.log(stringPura);
+console.log(texto);
 
-const string1Caracter = Boolean(" ");
-console.log(string1Caracter);
+if (texto === "html") {
+  console.log("Executar código");
+}
+
+if (10 >= 10) {
+  console.log("teste");
+}
+
+if (10 !== "10") {
+  console.log("diferente");
+}
