@@ -1,16 +1,15 @@
-const elemento = document.querySelector("p");
-const texto = elemento.innerText;
+const botao = document.querySelector("button");
 
-console.log(texto);
-
-if (texto === "html") {
-  console.log("Executar código");
+function somar() {
+  const div = document.querySelector("div");
+  const total = Number(div.innerText) + 1;
+  if (total < 10) {
+    div.innerText = total;
+  } else {
+    console.log("Resultado máximo é 9.");
+  }
 }
 
-if (10 >= 10) {
-  console.log("teste");
-}
-
-if (10 !== "10") {
-  console.log("diferente");
+if (botao) {
+  botao.addEventListener("click", somar);
 }
